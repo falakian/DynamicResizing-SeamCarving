@@ -50,10 +50,10 @@ Backtracking from the bottom to the top edge of the accumulated cost matrix to f
       <th>60% reduction</th>
     </tr>
     <tr>
-      <td><img src="" alt="Orginal Image" /></td>
-      <td><img src="" alt="40% reduction" /></td>
-      <td><img src="" alt="50% reduction" /></td>
-      <td><img src="" alt="60% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/Diana/Diana.png" alt="Orginal Image" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/60per/Diana.png" alt="40% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/50per/Diana.png" alt="50% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/40per/Diana.png" alt="60% reduction" /></td>
     </tr>
   </table>
 </div>
@@ -68,10 +68,10 @@ Backtracking from the bottom to the top edge of the accumulated cost matrix to f
       <th>60% reduction</th>
     </tr>
     <tr>
-      <td><img src="" alt="Orginal Image" /></td>
-      <td><img src="" alt="40% reduction" /></td>
-      <td><img src="" alt="50% reduction" /></td>
-      <td><img src="" alt="60% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/Snowman/Snowman.png" alt="Orginal Image" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/60per/Snowman.png" alt="40% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/50per/Snowman.png" alt="50% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/40per/Snowman.png" alt="60% reduction" /></td>
     </tr>
   </table>
 </div>
@@ -86,10 +86,10 @@ Backtracking from the bottom to the top edge of the accumulated cost matrix to f
       <th>60% reduction</th>
     </tr>
     <tr>
-      <td><img src="" alt="Orginal Image" /></td>
-      <td><img src="" alt="40% reduction" /></td>
-      <td><img src="" alt="50% reduction" /></td>
-      <td><img src="" alt="60% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/Dolls/Dolls.png" alt="Orginal Image" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/60per/Dolls.png" alt="40% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/50per/Dolls.png" alt="50% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/40per/Dolls.png" alt="60% reduction" /></td>
     </tr>
   </table>
 </div>
@@ -104,10 +104,10 @@ Backtracking from the bottom to the top edge of the accumulated cost matrix to f
       <th>60% reduction</th>
     </tr>
     <tr>
-      <td><img src="" alt="Orginal Image" /></td>
-      <td><img src="" alt="40% reduction" /></td>
-      <td><img src="" alt="50% reduction" /></td>
-      <td><img src="" alt="60% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/Baby/Baby.png" alt="Orginal Image" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/60per/Baby.png" alt="40% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/50per/Baby.png" alt="50% reduction" /></td>
+      <td><img src="https://github.com/falakian/DynamicResizing-SeamCarving/blob/main/40per/Baby.png" alt="60% reduction" /></td>
     </tr>
   </table>
 </div>
