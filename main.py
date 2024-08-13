@@ -7,6 +7,7 @@ def normalize_energy(energy):
     return image
 
 def apply_thresholds(image_sum, threshold, s_map):
+
     mask_sum_low = cv2.inRange(image_sum, 0, threshold)
     mask_sum_high = cv2.inRange(image_sum, threshold + 1, 255)
 
@@ -90,3 +91,39 @@ def seam_carving(image, saliency_map, depth_map, scale_percent, alpha , beta):
         width -= 1
 
     return image
+
+
+scale_percent = 0.5
+alpha = 0.15
+beta = 0.7
+
+image = cv2.imread('./Snowman/Snowman.png')
+saliency_map = cv2.imread('./Snowman/Snowman_SMap.png', cv2.IMREAD_GRAYSCALE)
+depth_map = cv2.imread('./Snowman/Snowman_DMap.png', cv2.IMREAD_GRAYSCALE)
+result = seam_carving(image, saliency_map, depth_map, scale_percent , alpha , beta)
+cv2.imshow('Seam Carved Image Snowman', result)
+cv2.imwrite('./Snowman.png' , result)
+
+image = cv2.imread('./Diana/Diana.png')
+saliency_map = cv2.imread('./Diana/Diana_SMap.png', cv2.IMREAD_GRAYSCALE)
+depth_map = cv2.imread('./Diana/Diana_DMap.png', cv2.IMREAD_GRAYSCALE)
+result = seam_carving(image, saliency_map, depth_map, scale_percent , alpha , beta)
+cv2.imshow('Seam Carved Image Diana', result)
+cv2.imwrite('./Diana.png' , result)
+
+image = cv2.imread('./Dolls/Dolls.png')
+saliency_map = cv2.imread('./Dolls/Dolls_SMap.png', cv2.IMREAD_GRAYSCALE)
+depth_map = cv2.imread('./Dolls/Dolls_DMap.png', cv2.IMREAD_GRAYSCALE)
+result = seam_carving(image, saliency_map, depth_map, scale_percent , alpha , beta)
+cv2.imshow('Seam Carved Image Dolls', result)
+cv2.imwrite('./Dolls.png' , result)
+
+image = cv2.imread('./Baby/Baby.png')
+saliency_map = cv2.imread('./Baby/Baby_SMap.png', cv2.IMREAD_GRAYSCALE)
+depth_map = cv2.imread('./Baby/Baby_DMap.png', cv2.IMREAD_GRAYSCALE)
+result = seam_carving(image, saliency_map, depth_map, scale_percent , alpha , beta)
+cv2.imshow('Seam Carved Image Baby', result)
+cv2.imwrite('./Baby.png' , result)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
