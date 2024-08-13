@@ -1,9 +1,26 @@
 import cv2
 import numpy as np
 
+def normalize_energy(energy):
+    pass
+
+def apply_thresholds(image_sum, threshold, s_map):
+    pass
 
 def compute_combined_energy(saliency_map, depth_map , alpha , beta):
-    pass
+    sum_senergy = depth_map + saliency_map
+
+    threshold,_ = cv2.threshold(sum_senergy, sum_senergy.min() , sum_senergy.max(), cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+
+    combined_energy = apply_thresholds(sum_senergy, threshold, saliency_map)
+
+    combined_energy = normalize_energy(combined_energy).astype(np.uint16)
+    depth_map = normalize_energy(depth_map).astype(np.uint16)
+    saliency_map = normalize_energy(saliency_map).astype(np.uint16)
+
+    sum_energy = (alpha)*combined_energy + (beta)*depth_map + (1-alpha-beta)*(saliency_map)
+    
+    return sum_energy
 
 def find_seam(energy):
     rows, cols = energy.shape
