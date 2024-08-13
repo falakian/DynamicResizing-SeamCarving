@@ -2,10 +2,20 @@ import cv2
 import numpy as np
 
 def normalize_energy(energy):
-    pass
+    image = (energy - energy.min()) / (energy.max() - energy.min()) * 255
+    image = image.astype(np.uint8)
+    return image
 
 def apply_thresholds(image_sum, threshold, s_map):
-    pass
+    mask_sum_low = cv2.inRange(image_sum, 0, threshold)
+    mask_sum_high = cv2.inRange(image_sum, threshold + 1, 255)
+
+    result = np.zeros_like(image_sum)
+
+    result[mask_sum_high > 0] = 255
+    result[mask_sum_low > 0] = s_map[mask_sum_low > 0]
+
+    return result
 
 def compute_combined_energy(saliency_map, depth_map , alpha , beta):
     sum_senergy = depth_map + saliency_map
